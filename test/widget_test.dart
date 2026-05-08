@@ -5,7 +5,7 @@ void main() {
   testWidgets('menampilkan halaman login saat belum masuk', (tester) async {
     await tester.pumpWidget(const RecipeApp(isLoggedIn: false));
 
-    expect(find.text('Masuk ke Resep Winda'), findsOneWidget);
+    expect(find.text('Masuk ke Resep'), findsOneWidget);
     expect(find.text('Username'), findsOneWidget);
     expect(find.text('Password'), findsOneWidget);
   });
